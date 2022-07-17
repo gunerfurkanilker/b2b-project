@@ -201,13 +201,14 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 
 import ChangePasswordDialog from "@/components/user-management/ChangePasswordDialog.vue";
 import UserCreateDialog from "@/components/user-management/UserCreateDialog.vue";
 import UserEditDialog from "@/components/user-management/UserEditDialog.vue";
 
 import Swal from "sweetalert2/dist/sweetalert2.js";
+
 
 export default {
   components: {
@@ -250,25 +251,25 @@ export default {
     };
   },
   methods: {
-    openChangePasswordDialog :() => {
+    openChangePasswordDialog () {
       this.changePasswordDialog = true;
     },
-    closeChangePasswordDialog:() => {
+    closeChangePasswordDialog() {
       this.changePasswordDialog = false;
     },
-    openUserCreateDialog:() => {
+    openUserCreateDialog() {
       this.userCreateDialog = true;
     },
-    closeUserCreateDialog:() => {
+    closeUserCreateDialog()  {
       this.userCreateDialog = false;
     },
-    openUserEditDialog:() => {
+    openUserEditDialog()  {
       this.userEditDialog = true;
     },
-    closeUserEditDialog:() => {
+    closeUserEditDialog() {
       this.userEditDialog = false;
     },
-    deletePrompt:() =>{
+    deletePrompt() {
       Swal.fire({
           text: "Kullanıcıyı Silmek İstediğinize Emin Eiminiz",
           icon: "warning",
@@ -285,7 +286,7 @@ export default {
             this.deleteUser();
         });
     },
-    deleteUser:() =>{
+    deleteUser(){
       Swal.fire({
           text: "Kullanıcı Silindi",
           icon: "success",

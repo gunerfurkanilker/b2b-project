@@ -12,9 +12,8 @@
   </el-dialog>
 </template>
 
-<script lang="ts">
+<script>
 
-import { getCurrentInstance } from "vue";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 
 export default {
@@ -26,7 +25,7 @@ export default {
   },
   methods:{
     dialogClose() {
-      getCurrentInstance.$emit("dialogClose");
+      this.$emit("dialogClose");
     },
     changePassword(){
       Swal.fire({

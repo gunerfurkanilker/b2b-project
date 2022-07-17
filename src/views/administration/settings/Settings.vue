@@ -28,9 +28,15 @@
         <el-tab-pane label="ERP AYARLARI">
           <ERPSettings></ERPSettings>
         </el-tab-pane>
-        <el-tab-pane label="AYARLAR">Config</el-tab-pane>
-        <el-tab-pane label="MAİL AYARLARI">Role</el-tab-pane>
-        <el-tab-pane label="KARGO LİSTESİ">Task</el-tab-pane>
+        <el-tab-pane label="AYARLAR">
+          <GeneralSettings></GeneralSettings>
+        </el-tab-pane>
+        <el-tab-pane label="MAİL AYARLARI">
+          <MailSettings></MailSettings>
+        </el-tab-pane>
+        <el-tab-pane label="KARGO LİSTESİ">
+          <CargoCompanyList></CargoCompanyList>
+        </el-tab-pane>
       </el-tabs>
       
       <!--end::Heading-->
@@ -42,11 +48,17 @@
 <script lang="ts">
 import Swal from "sweetalert2/dist/sweetalert2.js";
 
-import ERPSettings from "@/components/settings/ERPSettings.vue"
+import ERPSettings from "@/components/settings/ERPSettings.vue";
+import GeneralSettings from "@/components/settings/GeneralSettings.vue";
+import MailSettings from "@/components/settings/MailSettings.vue";
+import CargoCompanyList from "@/components/settings/CargoCompanyList.vue";
 
 export default {
   components: {
-    ERPSettings
+    ERPSettings,
+    GeneralSettings,
+    MailSettings,
+    CargoCompanyList
   },
   props: {
     title: {

@@ -317,7 +317,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Swal from "sweetalert2/dist/sweetalert2.js";
 
 export default {
