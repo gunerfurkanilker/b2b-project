@@ -11,6 +11,7 @@
     <!--begin::Message-->
     <h1 class="fw-semobold mb-10" style="color: #a3a3c7">
       Bu Sayfa Yapım Aşamasında
+      
     </h1>
     <!--end::Message-->
 
